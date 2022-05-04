@@ -8,12 +8,12 @@ $ npm i react-text-auto-resize
 
 ```jsx
 import React, { useState } from 'react';
-import AutoResize from './lib/AutoResize';
+import TextAutoResize from 'react-text-auto-resize';
   
 function App(){
 	const [value, setValue] = useState("");
 	return (
-		<AutoResize onChange={(e) => setValue(e)} />
+		<TextAutoResize onChange={(e) => setValue(e)} />
 	);
 }
 ```
@@ -22,7 +22,7 @@ function App(){
 
 ```jsx
 import React, { useState } from 'react';
-import AutoResize from './lib/AutoResize';
+import TextAutoResize from 'react-text-auto-resize';
   
 function App(){
 	const [value, setValue] = useState("");
@@ -34,7 +34,7 @@ function App(){
 	};
 
 	return (
-		<AutoResize
+		<TextAutoResize
 			minRow={2}
 			maxRow={8}
 			className="form-control" 
