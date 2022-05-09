@@ -1,6 +1,6 @@
 {
   "name": "react-text-auto-resize",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Dynamic growing textarea component for React",
   "license": "MIT",
   "main": "src/index.js",
@@ -11,11 +11,6 @@
   "private": false,
   "scripts": {
     "build": "rollup -c"
-  },
-  "dependencies": {
-    "react": ">=17",
-    "react-dom": ">=17",
-    "prop-types": "^15.7.2"
   },
   "eslintConfig": {
     "extends": [
@@ -38,12 +33,10 @@
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
-    "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@rollup/plugin-babel": "^5.3.0",
     "autoprefixer": "^10.2.5",
-    "node-sass": "^6.0.0",
     "rollup": "^2.48.0",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-styles": "^3.14.1"

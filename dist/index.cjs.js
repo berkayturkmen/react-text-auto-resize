@@ -9,8 +9,10 @@ var _slicedToArray__default = /*#__PURE__*/_interopDefaultLegacy(_slicedToArray)
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 function TextAutoResize(_ref) {
-  var minRow = _ref.minRow,
-      maxRow = _ref.maxRow,
+  var _ref$minRows = _ref.minRows,
+      minRows = _ref$minRows === void 0 ? 2 : _ref$minRows,
+      _ref$maxRows = _ref.maxRows,
+      maxRows = _ref$maxRows === void 0 ? 5 : _ref$maxRows,
       className = _ref.className,
       style = _ref.style,
       placeholder = _ref.placeholder,
@@ -18,7 +20,7 @@ function TextAutoResize(_ref) {
       onKeyUp = _ref.onKeyUp,
       onChange = _ref.onChange;
 
-  var _useState = React.useState(minRow),
+  var _useState = React.useState(minRows),
       _useState2 = _slicedToArray__default["default"](_useState, 2),
       rows = _useState2[0],
       setRows = _useState2[1];
@@ -32,7 +34,7 @@ function TextAutoResize(_ref) {
     var val = e.target.value;
     setValue(onChange(val));
     var newLines = (val.match(/\n/g) || []).length;
-    if (!newLines) setRows(minRow);else if (newLines < maxRow) setRows(newLines + 1);else setRows(maxRow);
+    if (!newLines) setRows(minRows);else if (newLines < maxRows) setRows(newLines + 1);else setRows(maxRows);
   }
 
   return /*#__PURE__*/React__default["default"].createElement("textarea", {
