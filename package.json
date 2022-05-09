@@ -1,6 +1,6 @@
 {
   "name": "react-text-auto-resize",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Dynamic growing textarea component for React",
   "license": "MIT",
   "main": "src/index.js",

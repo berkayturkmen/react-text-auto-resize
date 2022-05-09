@@ -27,7 +27,7 @@ function App(){
 | `maxRows` | `number` | Maximum number of rows up to which the textarea can grow | 5 |
 | `className` | `string` | additional class name of textarea | |
 | `style` | `string` | style properties of textarea `{ border: '2px solid #222' }` | |
-| `placeholeder` | `string` | Sets placeholer | |
+| `placeholeder` | `string` | Sets placeholder | |
 | `disabled` | `boolean` | Sets disabled | |
 | `onKeyUp` | `func` | Triggers the onKeyUp event | |
 | `onChange` | `func` | Triggers the onChange event  | | |
