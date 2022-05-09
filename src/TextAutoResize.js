@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-export default function TextAutoResize({ minRow, maxRow, className, style, placeholder, disabled, onKeyUp, onChange }) {
-    const [rows, setRows] = useState(minRow);
+export default function TextAutoResize({ minRows = 2, maxRows = 5, className, style, placeholder, disabled, onKeyUp, onChange }) {
+    const [rows, setRows] = useState(minRows);
     const [value, setValue] = useState("");
 
     function setTextAreaInput(e) {
@@ -9,9 +9,9 @@ export default function TextAutoResize({ minRow, maxRow, className, style, place
         setValue(onChange(val));
 
         const newLines = (val.match(/\n/g) || []).length;
-        if (!newLines) setRows(minRow);
-        else if (newLines < maxRow) setRows(newLines + 1);
-        else setRows(maxRow);
+        if (!newLines) setRows(minRows);
+        else if (newLines < maxRows) setRows(newLines + 1);
+        else setRows(maxRows);
     }
     return (
         <textarea

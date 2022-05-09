@@ -1,10 +1,11 @@
-## Installation
-
+# react-textarea-autosize
+Dynamic growing textarea component for React js
+### Installation
 ```
 $ npm i react-text-auto-resize
 ```
 
-## Usage
+### Usage
 
 ```jsx
 import React, { useState } from 'react';
@@ -18,7 +19,20 @@ function App(){
 }
 ```
 
-## Custom
+### Special props:
+
+| prop | type | description | default value |
+|-|-|-|-|
+| `minRows` | `number` | Minimum number of rows to show for textarea | 2 |
+| `maxRows` | `number` | Maximum number of rows up to which the textarea can grow | 5 |
+| `className` | `string` | additional class name of textarea | |
+| `style` | `string` | style properties of textarea `{ border: '2px solid #222' }` | |
+| `placeholeder` | `string` | Sets placeholer | |
+| `disabled` | `boolean` | Sets disabled | |
+| `onKeyUp` | `func` | Triggers the onKeyUp event | |
+| `onChange` | `func` | Triggers the onChange event  | | |
+
+### Custom
 
 ```jsx
 import React, { useState } from 'react';
@@ -35,8 +49,8 @@ function App(){
 
 	return (
 		<TextAutoResize
-			minRow={2}
-			maxRow={8}
+			minRows={2}
+			maxRows={8}
 			className="form-control" 
 			style={{ border: '2px solid #222', padding: '5px' }}
 			placeholeder={"hello world"}
