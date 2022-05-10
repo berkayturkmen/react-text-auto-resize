@@ -1,4 +1,4 @@
-# react-textarea-autosize
+# react-text-auto-resize
 Dynamic growing textarea component for React js
 ### Installation
 ```
