@@ -1,12 +1,23 @@
 {
   "name": "react-text-auto-resize",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Dynamic growing textarea component for React",
   "license": "MIT",
   "main": "src/index.js",
   "module": "dist/index.esm.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "auto resize",
+    "auto",
+    "resize",
+    "autosize",
+    "grow",
+    "react",
+    "react-component",
+    "textarea",
+    "text"
   ],
   "private": false,
   "scripts": {
@@ -34,6 +45,7 @@
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-react": "^7.13.13",
     "@rollup/plugin-babel": "^5.3.0",
     "autoprefixer": "^10.2.5",
